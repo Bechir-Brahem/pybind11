@@ -445,7 +445,7 @@ We can also use ``memoryview::from_memory`` for a simple 1D contiguous buffer:
     m.def("get_memoryview1d", []() {
         return py::memoryview::from_memory(
             buffer,               // buffer pointer
-            sizeof(uint8_t) * 8   // buffer size
+            8                     // buffer size
         );
     });
 
